@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.cultura.com/p-harry-potter-et-le-prisonnier-d-azkaban-illustre-par-minalima-9782075193993.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -234,7 +234,7 @@ response = requests.get(
     params={
         "query": "harry potter",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
